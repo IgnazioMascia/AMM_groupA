@@ -1,0 +1,495 @@
+    </head>
+    <body>
+        <h1>Parametri ricevuti</h1>
+        <ul></ul>
+            </body>
+</html>
+Connection closed by foreign host.
+Studente@pc27 [~] : telnet www.google.it 80
+Trying 74.125.195.94...
+Connected to www.google.it.
+Escape character is '^]'.
+GET Connection closed by foreign host.
+Studente@pc27 [~] : GET / HTTP/1.1
+Il programma "GET" non è attualmente installato. Per utilizzare "GET", chiedere all'amministratore di installare il pacchetto "libwww-perl"
+Studente@pc27 [~] : 
+Studente@pc27 [~] : GET / HTTP/1.1
+Il programma "GET" non è attualmente installato. Per utilizzare "GET", chiedere all'amministratore di installare il pacchetto "libwww-perl"
+Studente@pc27 [~] : 
+Studente@pc27 [~] : 
+Studente@pc27 [~] : 
+Studente@pc27 [~] : GET / HTTP/1.1 
+Il programma "GET" non è attualmente installato. Per utilizzare "GET", chiedere all'amministratore di installare il pacchetto "libwww-perl"
+Studente@pc27 [~] : GET / HTTP/1.1; host: www.google.com
+Il programma "GET" non è attualmente installato. Per utilizzare "GET", chiedere all'amministratore di installare il pacchetto "libwww-perl"
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+ Comando "host" dal pacchetto "bind9-host" (main)
+ Comando "host" dal pacchetto "knot-host" (universe)
+host:: comando non trovato
+Studente@pc27 [~] : telnet www.google.it 80
+Trying 74.125.195.94...
+Connected to www.google.it.
+Escape character is '^]'.
+GET / HTTP/1.1                   
+host www.google.com
+
+HTTP/1.1 302 Found
+Cache-Control: private
+Content-Type: text/html; charset=UTF-8
+Location: http://www.google.it/?gfe_rd=cr&ei=mALXVqGhJ8OAiAbUsYTABQ
+Content-Length: 258
+Date: Wed, 02 Mar 2016 15:11:20 GMT
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://www.google.it/?gfe_rd=cr&amp;ei=mALXVqGhJ8OAiAbUsYTABQ">here</A>.
+</BODY></HTML>
+Connection closed by foreign host.
+Studente@pc27 [~] : telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+GET /httpTest/index.php?alunno=davide&chiave=valore HTTP/1.1
+host: spano.sc.unica.it
+
+HTTP/1.1 200 OK
+Date: Wed, 02 Mar 2016 15:15:14 GMT
+Server: Apache/2.4.12 (Ubuntu)
+X-Powered-By: PHP/5.6.11-1ubuntu3.1
+Set-Cookie: PHPSESSID=akv22m0j2orbcn448u3966sjh3; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Length: 312
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Pagina di test per telnet</title>
+    </head>
+    <body>
+        <h1>Parametri ricevuti</h1>
+        <ul></ul>
+        <li>alunno: davide</li>
+<li>chiave: valore</li>
+    </body>
+</html>
+Connection closed by foreign host.
+Studente@pc27 [~] : telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+GET /httpTest/index.php?alunno=davide&chiave=valore HTTP/1.1
+host: spano.sc.unica.it^[[D^[[D^[[D^[[Connection closed by foreign host.
+Studente@pc27 [~] : telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+GET /httpTest/index.php?alunno=davide&chiave=valore HTTP/1.1
+host: spano.sc.unica.it^[[1;5D^[[1;2AConnection closed by foreign host.
+Studente@pc27 [~] : telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+GET /httpTest/index.php?alunno=davide&chiave=SomeThing HTTP/1.1
+host: spano.sc.unica.it
+
+HTTP/1.1 200 OK
+Date: Wed, 02 Mar 2016 15:17:49 GMT
+Server: Apache/2.4.12 (Ubuntu)
+X-Powered-By: PHP/5.6.11-1ubuntu3.1
+Set-Cookie: PHPSESSID=o6bsui0jj2iqihl04555cc6c13; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Length: 315
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Pagina di test per telnet</title>
+    </head>
+    <body>
+        <h1>Parametri ricevuti</h1>
+        <ul></ul>
+        <li>alunno: davide</li>
+<li>chiave: SomeThing</li>
+    </body>
+</html>
+Connection closed by foreign host.
+Studente@pc27 [~] : telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+POST /httpTest/index.php HTTP/1.1
+host: spano.sc.unica.it
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+
+alunno=davide&chiave=valore
+
+
+HTTP/1.0 403 Forbidden
+Cache-Control: no-cache
+Content-Type: text/html
+Expires: Fri, 2 Jan 1970 23:00:01 GMT
+Connection: close
+Content-Length: 1266
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Access Denied</title>
+    <style type="text/css">
+      body, table
+      {
+        font-family: verdana, geneva, ariel;
+        color:   #2d558e;
+      }
+      html, body
+      {
+        margin:  0;
+        padding: 0;
+        height:  100%;
+        border:  none;
+      }
+    </style>
+  </head>
+  <!--
+    URLForbidden.html is displayed when the requested page:
+    - contains invalid characters or format
+    - the URL is in blacklist
+    - the category server is not configured properly
+    - the category server is unreachable
+    - the categories of the URL are forbidden and reclassification is not allowed
+  -->
+  <body>
+    <table style="height:100%;width:100%;" summary="">
+      <tr>
+        <td align="center" width="100%" height="100%">
+          <table cellspacing="0" cellpadding="0" summary="">
+            <tr>
+              <td><h1>Forbidden:</h1></td>
+            </tr>
+            <tr>
+              <td>Access to the location: <b>http://</b><br/><br/>has been denied for the following reason: <br/><b>Bad Request</b></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+Connection closed by foreign host.
+Studente@pc27 [~] : POST /httpTest/index.php HTTP/1.1
+Il programma "POST" non è attualmente installato. Per utilizzare "POST", chiedere all'amministratore di installare il pacchetto "libwww-perl"
+Studente@pc27 [~] : host: spano.sc.unica.it
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "host" dal pacchetto "knot-host" (universe)
+ Comando "host" dal pacchetto "bind9-host" (main)
+host:: comando non trovato
+Studente@pc27 [~] : Content-Type: application/x-www-form-urlencoded
+Content-Type:: comando non trovato
+Studente@pc27 [~] : Content-Length: 27
+Content-Length:: comando non trovato
+Studente@pc27 [~] : 
+Studente@pc27 [~] : alunno=davide&chiave=valorePOST /httpTest/index.php HTTP/1.1
+[1] 3996
+bash: /httpTest/index.php: File o directory non esistente
+[1]+  Completato              alunno=davide
+Studente@pc27 [~] : host: spano.sc.unica.it
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "host" dal pacchetto "bind9-host" (main)
+ Comando "host" dal pacchetto "knot-host" (universe)
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+host:: comando non trovato
+Studente@pc27 [~] : Content-Type: application/x-www-form-urlencoded
+Content-Type:: comando non trovato
+Studente@pc27 [~] : Content-Length: 27
+Content-Length:: comando non trovato
+Studente@pc27 [~] : 
+Studente@pc27 [~] : alunno=davide&chiave=valorePOST /httpTest/index.php HTTP/1.1
+[1] 4004
+bash: /httpTest/index.php: File o directory non esistente
+[1]+  Completato              alunno=davide
+Studente@pc27 [~] : host: spano.sc.unica.it
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "host" dal pacchetto "bind9-host" (main)
+ Comando "host" dal pacchetto "knot-host" (universe)
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+host:: comando non trovato
+Studente@pc27 [~] : Content-Type: application/x-www-form-urlencoded
+Content-Type:: comando non trovato
+Studente@pc27 [~] : Content-Length: 27
+POST /httpTest/index.php HTTP/1.1
+host: spano.sc.unica.it
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+
+alunno=davide&chiave=valoreContent-Length:: comando non trovato
+Studente@pc27 [~] : 
+Studente@pc27 [~] : alunno=davide&chiave=valorePOST /httpTest/index.php HTTP/1.1
+[1] 4012
+bash: /httpTest/index.php: File o directory non esistente
+[1]+  Completato              alunno=davide
+Studente@pc27 [~] : host: spano.sc.unica.it
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "host" dal pacchetto "bind9-host" (main)
+ Comando "host" dal pacchetto "knot-host" (universe)
+host:: comando non trovato
+Studente@pc27 [~] : Content-Type: application/x-www-form-urlencoded
+Content-Type:: comando non trovato
+Studente@pc27 [~] : Content-Length: 27
+Content-Length:: comando non trovato
+Studente@pc27 [~] : 
+Studente@pc27 [~] : alunno=davide&chiave=valorePOST /httpTest/index.php HTTP/1.1
+[1] 4020
+bash: /httpTest/index.php: File o directory non esistente
+[1]+  Completato              alunno=davide
+Studente@pc27 [~] : host: spano.sc.unica.it
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "host" dal pacchetto "bind9-host" (main)
+ Comando "host" dal pacchetto "knot-host" (universe)
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+host:: comando non trovato
+Studente@pc27 [~] : Content-Type: application/x-www-form-urlencoded
+Content-Type:: comando non trovato
+Studente@pc27 [~] : Content-Length: 27
+Content-Length:: comando non trovato
+Studente@pc27 [~] : 
+Studente@pc27 [~] : alunno=davide&chiave=valorePOST /httpTest/index.php HTTP/1.1
+[1] 4028
+bash: /httpTest/index.php: File o directory non esistente
+[1]+  Completato              alunno=davide
+Studente@pc27 [~] : host: spano.sc.unica.it
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "host" dal pacchetto "knot-host" (universe)
+ Comando "host" dal pacchetto "bind9-host" (main)
+host:: comando non trovato
+Studente@pc27 [~] : Content-Type: application/x-www-form-urlencoded
+Content-Type:: comando non trovato
+Studente@pc27 [~] : Content-Length: 27
+Content-Length:: comando non trovato
+Studente@pc27 [~] : 
+Studente@pc27 [~] : alunno=davide&chiave=valorePOST /httpTest/index.php HTTP/1.1
+[1] 4036
+bash: /httpTest/index.php: File o directory non esistente
+[1]+  Completato              alunno=davide
+Studente@pc27 [~] : host: spano.sc.unica.it
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "host" dal pacchetto "knot-host" (universe)
+ Comando "host" dal pacchetto "bind9-host" (main)
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+host:: comando non trovato
+Studente@pc27 [~] : Content-Type: application/x-www-form-urlencoded
+Content-Type:: comando non trovato
+Studente@pc27 [~] : Content-Length: 27
+POST /httpTest/index.php HTTP/1.1
+host: spano.sc.unica.it
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+
+alunno=davide&chiave=valoreContent-Length:: comando non trovato
+Studente@pc27 [~] : 
+Studente@pc27 [~] : alunno=davide&chiave=valorePOST /httpTest/index.php HTTP/1.1
+[1] 4044
+bash: /httpTest/index.php: File o directory non esistente
+[1]+  Completato              alunno=davide
+Studente@pc27 [~] : host: spano.sc.unica.it
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+ Comando "host" dal pacchetto "bind9-host" (main)
+ Comando "host" dal pacchetto "knot-host" (universe)
+host:: comando non trovato
+Studente@pc27 [~] : Content-Type: application/x-www-form-urlencoded
+Content-Type:: comando non trovato
+Studente@pc27 [~] : Content-Length: 27
+POST /httpTest/index.php HTTP/1.1
+host: spano.sc.unica.it
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+
+alunno=davide&chiave=valoreContent-Length:: comando non trovato
+Studente@pc27 [~] : 
+Studente@pc27 [~] : alunno=davide&chiave=valorePOST /httpTest/index.php HTTP/1.1
+[1] 4052
+bash: /httpTest/index.php: File o directory non esistente
+[1]+  Completato              alunno=davide
+Studente@pc27 [~] : host: spano.sc.unica.it
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "host" dal pacchetto "knot-host" (universe)
+ Comando "host" dal pacchetto "bind9-host" (main)
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+host:: comando non trovato
+Studente@pc27 [~] : Content-Type: application/x-www-form-urlencoded
+Content-Type:: comando non trovato
+Studente@pc27 [~] : Content-Length: 27
+Content-Length:: comando non trovato
+Studente@pc27 [~] : 
+Studente@pc27 [~] : alunno=davide&chiave=valoreclear
+[1] 4060
+Studente@pc27 [~] : clear
+
+[1]+  Completato              alunno=davide
+Studente@pc27 [~] : host: spano.sc.unica.it 80Comando "host:" non trovato. Forse si intendeva:
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "host" dal pacchetto "knot-host" (universe)
+ Comando "host" dal pacchetto "bind9-host" (main)
+host:: comando non trovato
+Studente@pc27 [~] : telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+GET /httpTest/checkBrowser.php HTTP/1.1
+host: spano.sc.unica.it
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22
+
+HTTP/1.1 200 OK
+Date: Wed, 02 Mar 2016 15:28:11 GMT
+Server: Apache/2.4.12 (Ubuntu)
+X-Powered-By: PHP/5.6.11-1ubuntu3.1
+Vary: Accept-Encoding
+Content-Length: 657
+Content-Type: text/html; charset=UTF-8
+
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Test del Browser</h1>
+                <p>
+            
+        
+Stai usando Windows            <p> 
+                Stai usando un browser con webkit (Safari o Chrome?)<br/>Usi Chrome!        </p>
+        <p><code>
+                Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22            </code>
+        </p>
+    </body>
+</html>
+Connection closed by foreign host.
+Studente@pc27 [~] : telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+GET /httpTest/checkBrowser.php HTTP/1.1
+host: spano.sc.unica.it
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0 
+
+HTTP/1.1 200 OK
+Date: Wed, 02 Mar 2016 15:30:48 GMT
+Server: Apache/2.4.12 (Ubuntu)
+X-Powered-By: PHP/5.6.11-1ubuntu3.1
+Vary: Accept-Encoding
+Content-Length: 573
+Content-Type: text/html; charset=UTF-8
+
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Test del Browser</h1>
+                <p>
+            
+        
+Stai usando Windows            <p> 
+                Stai usando Firefox!        </p>
+        <p><code>
+                Mozilla/5.0 (Windows NT 6.2; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0            </code>
+        </p>
+    </body>
+</html>
+
+
+HTTP/1.0 403 Forbidden
+Cache-Control: no-cache
+Content-Type: text/html
+Expires: Fri, 2 Jan 1970 23:00:01 GMT
+Connection: close
+Content-Length: 1266
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Access Denied</title>
+    <style type="text/css">
+      body, table
+      {
+        font-family: verdana, geneva, ariel;
+        color:   #2d558e;
+      }
+      html, body
+      {
+        margin:  0;
+        padding: 0;
+        height:  100%;
+        border:  none;
+      }
+    </style>
+  </head>
+  <!--
+    URLForbidden.html is displayed when the requested page:
+    - contains invalid characters or format
+    - the URL is in blacklist
+    - the category server is not configured properly
+    - the category server is unreachable
+    - the categories of the URL are forbidden and reclassification is not allowed
+  -->
+  <body>
+    <table style="height:100%;width:100%;" summary="">
+      <tr>
+        <td align="center" width="100%" height="100%">
+          <table cellspacing="0" cellpadding="0" summary="">
+            <tr>
+              <td><h1>Forbidden:</h1></td>
+            </tr>
+            <tr>
+              <td>Access to the location: <b>http://</b><br/><br/>has been denied for the following reason: <br/><b>Bad Request</b></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+Connection closed by foreign host.
+Studente@pc27 [~] : ^C
+Studente@pc27 [~] : 
+ 
