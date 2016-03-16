@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <head>
+        <title>Lezione 3 HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <!--corpo del documento html-->
+    <body>
+    <h1>Registrazione esami triennale e magistrale </h1>
+    <!--Immagine logo unica-->
+    <img src ="C:\Users\studente\IgnazioMascia\AMM_groupA\WebApplication1\web\WEB-INF\img\somef.jpg"
+         title="logo unica"
+         width="150" height="150">
+    
+    <!--form-->
+    <form method="GET">
+        
+        <!--nome, cognome e matricola studente-->
+        <div>
+            <label for="NomeStudente">Nome Studente</label>
+            <input type="text" name="NomeStudente" id="NomeStudente" />
+            <label for="CognomeStudente">Cognome Studente</label>
+            <input type="text" name="CognomeStudente" id="CognomeStudente" />
+            <label for="Matricola">Matricola Studente</label>
+            <input type="number" name="Matricola" id="Matricola" />
+        </div>
+    
+        <!--Lista esami e voto-->
+        <div>
+            <label for="ListaEsami">Lista Esami</label>
+            <select size="3" name="ListaEsami" id="ListaEsami">
+                <option value="PR1">Progrmmazione 1</option>
+                <option value="PR2">Progrmmazione 2</option>
+                <option value="AMM">Amministrazione di sistema</option>
+                <option value="EAI">Elaborazione di immagini</option>
+                <option value="FS">Fondamenti di informatica</option>
+                <option value="ARE2">Are 2</option>
+            </select>
+        
+            <label for="voto">Voto</label>
+            <input type="range" min="18" max="31"
+                   name="voto" id="voto">
+        
+        </div>
+        
+        <!--descrizione-->
+        <div>
+            <label for="Descrizione">Descrizione</label>
+            <textarea name="Descrizione" id="Descrizione"
+                      cols="40" rows="10">Descrizione Esame</textarea>
+        </div>
+        
+        <!--Pulsanti submit e reset-->
+        <div>
+            <input type="submit" value="Invia">
+            <input type="reset" value="Cancella">
+        </div>
+    
+    </form>
+    
+    </body>
+</html>
