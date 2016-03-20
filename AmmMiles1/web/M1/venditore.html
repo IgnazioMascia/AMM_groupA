@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <!--
-Pagina di descrizione del sito e-commerce
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
 -->
 <html>
     <head>
         <title>Venditore</title>
         <meta charset="UTF-8">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Mascia Ignazio">
+        <meta name="description" content="Pagina del veditore">
     </head>
     <body>
-        <h1>ciao</h1>
-        <div>Non saprei</div>
+        <!--Pagina del venditore-->
+        <h1>Area venditore</h1>
+        <p>Inserire le informazioni dell'oggetto da mettere in vendita:</p>
+        
+        <!--Form per l'inserimento delle info dell'oggetto-->
+        <form>
+                    <label for="nomeOggetto">Titolo inserzione:</label>
+                    <input type="text" name="nomeOggetto" id="nomeOggetto" />
+                    <br/>
+                    <label for="urlImmagine">Inserisci l'url dell'immagine dell'oggetto:</label>
+                    <input type="url" name="urlImmagine" id="urlImmagine">
+                    <br/>
+                    <label for="descrizioneOgg">Immetti una breve descrizione dell'oggetto:</label>
+                    <textarea name="descrizioneOgg" id="descrizioneOgg"
+                                  cols="40" rows="10" >Descrizione</textarea>
+                    <br/>
+                    <label for="quantita">Inserire la quantit&agrave; da vendere:</label>
+                    <input type="number" name="quantita" id="quantita" min="1" max="1000">
+                    <br/>
+                    <label for="prezzo">Prezzo per unit&agrave;: &euro;</label>
+                    <input type="number" step="any" name="prezzo" id="prezzo" min="1" max="1000">
+                    <br/>
+                    <input type="submit">
+
+        </form>
+        
+        <hr/>
+        
+        <!--Sezione per i link esterni-->
+        <div>
+        <h2 id="link_esterni">Vai a:</h2>
+            <a href="descrizione.html">Descrizione del sito</a>
+            <a href="login.html">Login</a>
+        </div>
     </body>
 </html>
