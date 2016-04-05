@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-mar-2016, 15.29.12
+    Author     : ignazio
+*/
+body
+{
+    font-size: 14px;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: black;   
+}
+
+#logo
+{
+    background-color: #1c345a;
+}
+
+#header, #footer
+{
+    color: white;
+}
+
+.current_page_item
+{
+    font-weight: bold;
+}
+
+div h2#content
+{
+    color: #9e1616;
+}
+
+h1 h2 h3 h4 h5 h6
+{
+    color: #1c345a;
+}
+
+a:link{
+    text-decoration: underline;
+    color: #9e1616;
+}
+
+a:visited{
+    text-decoration: underline;
+    color: #9e1616;
+}
+
+a:hover{
+    font-weight: bold;
+
+}
+
+a[href= "studente_esami.html"]
+{
+    color: #1c345a;
+}
