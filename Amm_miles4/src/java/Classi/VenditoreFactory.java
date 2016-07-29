@@ -94,7 +94,7 @@ public class VenditoreFactory {
         try 
         {
             // path, username, password
-            Connection conn = DriverManager.getConnection(connectionString, "ignazio", "0000");
+            Connection conn = DriverManager.getConnection(connectionString, "", "");
             Statement stmt = conn.createStatement();
             String query = "select * from venditore";
             ResultSet set = stmt.executeQuery(query);
