@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RiepilogoOggettoInVendita</title>
+        <title>ConfermaAcquisto</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Mascia Ignazio">
@@ -29,9 +29,7 @@
         
         <div id="contentsss">
             <p>Acquisto avvenuto con successo!</p>
-            <br><br>Id CLIENTE: ${idC}.
-                    <br>Costo OGGETTO: ${costoO}.
-                    <br>Conto CLIENTE: ${cliente.conto}
+            
             
         </div>
         
