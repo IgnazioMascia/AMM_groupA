@@ -1,0 +1,425 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*impostazioni generali del layout*/
+
+h1
+{
+	display: none;
+}
+
+h2
+{
+	font-family: "Verdana", Times, sans-serif;
+	display: block;
+    font-size: 1.5em;
+    font-weight: Bold;
+	color: #242424;
+}
+
+h3
+{
+	font-family: "Verdana", Times, sans-serif;
+	display: block;
+    font-size: 1em;
+    font-weight: lighter;
+	color: #242424;
+}
+
+a:link, a:visited
+{
+	color: #0070a8;
+    text-decoration: none;
+    padding: 1px;
+    display: inline-block;
+	text-align: justify;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a:hover
+{
+	font-weight: bold;
+}
+
+body
+{
+	background-color: white;
+	font: 13px/20px "Open Sans", Arial, sans-serif;
+}
+
+#container {
+	background-color: #e4e4e4;
+}
+
+#menu ul li a:link
+{
+	color: black;
+	text-decoration: underline;
+}
+
+#menu ul li a:visited
+{
+	color: black;
+	text-decoration: underline;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+#menu ul li
+{	
+	position: relative;
+	float: left;
+	display: inline-block;
+}
+
+#div
+{
+	display: block;
+}
+
+#contentsss h2
+{
+	font: 20px/20px "Open Sans", Arial, sans-serif;
+	color: #555555;
+	text-decoration: underline;
+	
+}
+
+#navigazione h2
+{
+	font: 20px/20px "Open Sans", Arial, sans-serif;
+	color: #6B6060;
+	font-weight: bold;
+}
+
+#navigazione a:link, #navigazione a:visited
+{
+	color: black;
+}
+
+li
+{
+	list-style: none;
+}
+
+/*visualizzazione campi input*/
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=number]
+{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #91AC93;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background-color: #CCCCCC;
+	color: #575757;
+	margin-bottom: 15px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=url]:focus,
+input[type=number]:focus
+{
+	background-color: lightblue;
+}
+
+textarea
+{
+	width: 100%;
+	height: 100px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing:border-box;
+	border: 1px solid #91AC93;;
+	border-radius: 4px;
+	background-color: #CCCCCC;
+	display: inline-block;
+}
+
+textarea:focus
+{
+	background-color: lightblue;
+}
+
+input[type=submit]
+{
+	background-color: #5BC371;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+/*Riquadro generale del posizionamento dei box di input*/
+
+.Usr,
+.Psw,
+.titolo_input,
+.immagine_input,
+.dettagli_input,
+.quantita_input,
+.prezzo_input
+{
+	border-bottom: 1px solid #ABABAB;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.invio_input_login,
+.invio_input_oggetto
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*Visualizzazione righe pari e dispari*/
+
+#oggettistica > li:nth-child(even) {
+        border-radius: 6px;
+	border: 1px solid #ACA9A9;
+	padding: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+        background-color: #B2B2B2;
+}
+
+#oggettistica > li:nth-child(odd) {
+        border-radius: 6px;
+	border: 1px solid #ACA9A9;
+	padding: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+        background-color: #E0DEDE;
+}
+
+/*Non andava bene la visualizzazione poichè l'inserimento della classe pari o
+dispari, per ogni elemento nuovo nella pag cliente, era manuale.'*/
+/*.pari,
+.dispari
+{
+	border-radius: 6px;
+	border: 1px solid #ACA9A9;
+	padding: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.dispari
+{
+	background-color: #E0DEDE;
+}
+
+.pari
+{
+	background-color: #B2B2B2;
+}
+*/
+
+/*Campi visualizzazione articoli*/
+.ogg_image
+{
+	float: left;
+	margin: 5px;
+}
+
+.ogg_desc
+{
+	margin-left: 100px;
+}
+
+/*gestione dei dispositivi*/
+
+@media only screen and (min-width: 1024px){
+
+html, body
+{
+	height: 100%;
+	margin: 0;
+	padding-bottom: 0px;
+}
+
+body
+{	/*
+    font-family: arial,sans-serif;
+    font-size: 76%;
+    text-align: center;
+	color: #242424;*/
+	margin-left: 10em;
+	margin-right: 10em;
+	margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	height: auto;
+}
+
+#container {
+	margin-top: 50px;
+        width: auto !important;
+	overflow: auto;
+        text-align: center;
+	margin-right: 10%;
+	margin-left: 10%;
+
+	min-height:100%;
+	margin-bottom: 0;
+}
+
+#header
+{ 
+	display: block;
+	overflow:auto;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url(../images/barra.png);
+	background-size: contain;
+	z-index: 1;
+}
+
+#logo
+{
+	width:20%;
+	height:50px;
+	background-image:url(../images/logo.png);
+	position: fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index:2;
+	margin-left: 85%;
+}
+
+#contentsss
+{	
+    padding: 2em;
+	margin-left: 50%;
+	width: 60%;
+	float: right;
+	margin: auto;
+	margin-right: 5%;
+	text-align: justify;
+	/*padding-left: 5%;*/
+	border-left: 1px solid #ABABAB;
+}
+
+#navigazione
+{	
+	display: inline;
+	position: relative;
+	float: left;
+    width: 20%;
+	margin-top: 30px;
+	margin-left: 30px;
+	padding-left: 25px;
+}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+
+#header
+{ 
+	display: block;
+	overflow:auto;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url(../images/barra.png);
+	background-size: contain;
+	z-index: 1;
+}
+
+#container {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	margin-top: 40px;
+}
+
+#navigazione
+{
+	border-top: 1px solid #ABABAB;
+}
+
+#logo
+{
+	width:20%;
+	height:40px;
+	background-image:url(../images/logo.png);
+	position: fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index:2;
+	margin-left: 80%;
+}
+
+#containersss
+{
+	padding-left: 15px;
+}
+}
+@media only screen and (max-width: 480px){
+
+#header
+{ 
+	display: block;
+	overflow:auto;
+	width: 100%;
+	height: 40px;
+	top: 0;
+	left: 0;
+	background-image: url(../images/barra.png);
+	background-size: contain;
+	z-index: 1;
+}
+
+#container {
+	padding: 10px;
+	margin-top: 0px;
+}
+
+#navigazione
+{
+	width: 100%;
+	border: 1px solid #ABABAB;
+}
+
+#logo
+{
+	width: 25%;
+	height:40px;
+	float: left;
+	background-image:url(../images/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index:2;
+}
+
+#menu
+{
+	float: right;
+}
+
+#containersss
+{
+	width: 100%;
+	border: 1px solid #ABABAB;
+}
+	}

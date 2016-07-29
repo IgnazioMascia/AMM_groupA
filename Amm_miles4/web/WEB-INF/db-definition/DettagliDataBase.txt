@@ -1,0 +1,30 @@
+Dettaglio schematico della struttura dei dati.
+
+[DESCRIZIONE]
+Il sito e-commerce ha sia venditori che clienti. Tralascio l'entità "sito" poiché unica e
+si possono omettere le relazioni venditore-sito e cliente-sito poiché inutili.
+Ogni venditore ha uno "spazio vendita" e ciascuno spazio vendita ha un solo venditore.
+Ciascuno spazio vendita ha più oggetti e un oggetto può appartenere ad un solo spazio
+vendita (ragione per cui ci saranno due tabelle per questa parte, Venditore e Oggetto,
+con Oggetto che è legato alla prima tramite una chiave esterna posta in Oggetto, cosi
+che questa possa specificare a quale venditore appartenga l'oggetto in vendita in questione
+e permetta di collegare ad un singolo venditore l'appartenenza di più oggetti in vendita).
+Ogni cliente, invece, ha un "carrello" e ciascun carrello ha un solo cliente, inoltre un carrello
+può avere più oggetti e un oggetto può risiedere in più carrelli. Quindi si creerebbe una
+relazione di tipo N-N fra Cliente (in cui l'esistenza di Carrello è insita) e Oggetto.
+Risolvo questa parte creando una tabella relazionale: Carrello_Oggetto in cui vi risiederanno
+l'id del cliente e l'id dell'oggetto.
+
+[ENTITA']
+-Venditore ha i seguenti attributi:
+	{ID, Nome, Cognome, Username, Password, Conto (fondi spesa)}
+-Oggetto_Carrello:
+        {idOggetto, idCliente}
+-ObjectSale (oggetto) ha i seguenti attributi:
+	{ID, nome, descrizione, num_pezzi, prezzo, categoria, urlImmagine, idVendita(FK->Venditore)}
+-Cliente ha i seguenti attributi:
+	{ID, Nome, Cognome, Username, Password, Conto (fondi spesa)}
+
+[RELAZIONI]
+Venditore-Oggetto = 1-1
+Cliente-Oggetto = N-N
