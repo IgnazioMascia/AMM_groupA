@@ -38,6 +38,9 @@ public class LoginServlet extends HttpServlet {
             Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
         ObjectSaleFactory.getInstance().setConnectionString(dbConnection);
+        ClienteFactory.getInstance().setConnectionString(dbConnection);
+        VenditoreFactory.getInstance().setConnectionString(dbConnection);
+        
     }
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>

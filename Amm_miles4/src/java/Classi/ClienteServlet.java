@@ -77,29 +77,6 @@ public class ClienteServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //processRequest(request, response);
-        
-        /*int idOggetto = Integer.parseInt(request.getParameter("idExport"));
-        
-        ArrayList<ObjectSale> listaOggetti = ObjectSaleFactory.getInstance().getListaOggetti();
-        for(ObjectSale u : listaOggetti)
-            {
-                if(u.getId() == idOggetto){
-                    CostoOgg = u.getPrezzo;
-                    request.setAttribute("Oggetto", u);
-                    //request.setAttribute("Costo", CostoOgg);
-                    request.getRequestDispatcher("RiepilogoOrdine.jsp").forward(request, response);
-                }
-            }*/
-        
-        /*HttpSession session = request.getSession(false);
-        
-        request.setAttribute("cliente", ClienteFactory.getInstance().getClienteById((int)session.getAttribute("id")));
-        
-        int idOggetto = Integer.parseInt(request.getParameter("idOggetto"));
-        request.setAttribute("oggetto", ObjectSaleFactory.getInstance().getOggettoById(idOggetto));
-        
-        request.getRequestDispatcher("RiepilogoOrdine.jsp").forward(request, response);*/
     }
 
     /**

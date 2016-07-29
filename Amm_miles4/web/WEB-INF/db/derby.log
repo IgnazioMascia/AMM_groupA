@@ -1,8 +1,8 @@
-Mon Jul 25 16:56:02 CEST 2016 : Server di rete Apache Derby: 10.11.1.2 - (1629631) avviato e pronto ad accettare connessioni sulla porta 1527
+Fri Jul 29 19:32:03 CEST 2016 : Server di rete Apache Derby: 10.11.1.2 - (1629631) avviato e pronto ad accettare connessioni sulla porta 1527
 ----------------------------------------------------------------
-Mon Jul 25 16:56:02 CEST 2016:
-Avvio della versione di Derby The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): istanza a816c00e-0156-228e-3858-00001989aedf
-sulla directory di database C:\Users\Ignazio\Documents\Amm_Gruppo1\AMM_groupA\Amm_miles3\web\WEB-INF\db\ammdb con caricatore classi sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Fri Jul 29 19:32:03 CEST 2016:
+Avvio della versione di Derby The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): istanza a816c00e-0156-37b6-839f-000059936918
+sulla directory di database C:\Users\Ignazio\Documents\NetBeansProjects\AMM_groupA\Amm_miles4\web\WEB-INF\db\ammdb con caricatore classi sun.misc.Launcher$AppClassLoader@1d44bcfa 
 Caricato da file:/C:/Program%20Files/Java/jdk1.8.0_91/db/lib/derby.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_91-b14
@@ -10,5 +10,22 @@ user.dir=C:\Program Files\Java\jdk1.8.0_91\db
 os.name=Windows 10
 os.arch=amd64
 os.version=10.0
-derby.system.home=C:\Users\Ignazio\Documents\Amm_Gruppo1\AMM_groupA\Amm_miles3\web\WEB-INF\db
+derby.system.home=C:\Users\Ignazio\Documents\NetBeansProjects\AMM_groupA\Amm_miles4\web\WEB-INF\db
+Programma di caricamento classe database avviato - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Jul 29 19:32:20 CEST 2016:
+Arresto dell'istanza a816c00e-0156-37b6-839f-000059936918 nella directory del database C:\Users\Ignazio\Documents\NetBeansProjects\AMM_groupA\Amm_miles4\web\WEB-INF\db\ammdb con il caricatore di classi sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Fri Jul 29 19:32:20 CEST 2016 Thread[DRDAConnThread_3,5,main] (DATABASE = ammdb), (DRDAID = {2}), Chiusura del database 'ammdb'.
+----------------------------------------------------------------
+Fri Jul 29 19:32:27 CEST 2016:
+Avvio della versione di Derby The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): istanza a65c80ac-0156-37b6-839f-000059936918
+sulla directory di database C:\Users\Ignazio\Documents\NetBeansProjects\AMM_groupA\Amm_miles4\web\WEB-INF\db\ammdb con caricatore classi sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Caricato da file:/C:/Program%20Files/Java/jdk1.8.0_91/db/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_91-b14
+user.dir=C:\Program Files\Java\jdk1.8.0_91\db
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Ignazio\Documents\NetBeansProjects\AMM_groupA\Amm_miles4\web\WEB-INF\db
 Programma di caricamento classe database avviato - derby.database.classpath=''

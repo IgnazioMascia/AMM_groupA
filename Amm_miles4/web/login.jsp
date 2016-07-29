@@ -35,7 +35,7 @@ and open the template in the editor.
         
         <div id="contentsss">
                     <!--Form per il login-->
-                    <form method="post" action="LoginServlet">
+                    <form method="POST" action="LoginServlet">
                         <!--Username e password utente-->
                         <div class="login">
                         	<div class="Usr">
